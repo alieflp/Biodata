@@ -1,0 +1,164 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.5;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+#header {
+    background-color: #031318;
+    width: 100%;
+    padding: 15px 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 100px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+nav ul li a::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #17a9cb;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.profil-container {
+    text-align: center;
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.profil-container h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.profil-container img {
+    border-radius: 50%; /* Membuat gambar menjadi bulat */
+    width: 250px; /* Ukuran gambar */
+    height: 250px; /* Ukuran gambar */
+    object-fit: contain; /* Menyesuaikan gambar agar tidak terpotong */
+    margin-bottom: 20px;
+    border: 5px solid #031318; /* Border dengan ketebalan 5px dan warna */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan untuk efek kedalaman */
+}
+
+/* About Section */
+.info {
+    margin: 60px auto;
+    width: 80%;
+    max-width: 1000px;
+    text-align: center;
+}
+
+.personal-info {
+    background-color: #fff;
+    padding: 100px;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.personal-info h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.personal-info p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.social-media {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.social-media a {
+    display: inline-block;
+    margin: 20px 25px;
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-media a:hover {
+    transform: scale(1.1);
+    color: #17a9cb;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 10px;
+    transition: transform 0.3s; 
+}
+
+.social-media a:hover img {
+    transform: scale(1.2); 
+}
+
+section {
+    padding: 100px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #031318;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+}
